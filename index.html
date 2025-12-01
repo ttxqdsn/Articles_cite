@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文献原文</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f8f9fa;
+            padding: 2rem 1rem;
+            font-family: "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+        /* 页面标题 */
+        .page-title {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+        /* 垂直图片容器 */
+        .image-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+        /* 图片卡片 */
+        .image-card {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        /* 悬浮效果增强 */
+        .image-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            border-color: #e8f4f8;
+        }
+        /* 图片样式 */
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        /* 图片标题和描述 */
+        .image-info {
+            text-align: center;
+        }
+        .image-title {
+            color: #2d3748;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+        .image-desc {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        /* 移动端适配 */
+        @media (max-width: 600px) {
+            .page-title {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            .image-container {
+                gap: 1.5rem;
+            }
+            .image-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">文献引用依据（仅列举部分）</h1>
+    
+    <div class="image-container">
+        <!-- 图片1 -->
+        <div class="image-card">
+            <img src="1.png" alt="图片1">
+            <div class="image-info">
+                <h3 class="image-title">Flow-induced detachment of red blood cells adhering to surfaces by specific antigen-antibody bonds</h3>
+                <p class="image-desc">红细胞的黏附强度随时间呈指数增长，特征老化时间约4小时。</p>
+            </div>
+        </div>
+
+        <!-- 图片2 -->
+        <div class="image-card">
+            <img src="2.png" alt="图片2">
+            <div class="image-info">
+                <h3 class="image-title">A biophysical model of cell adhesion mediated by immunoadhesin drugs and antibodies</h3>
+                <p class="image-desc">靶细胞表面抗原存在异质性，仅部分表位能参与结合，且单个细胞的结合数量受表位密度限制。</p>
+            </div>
+        </div>
+
+        <!-- 图片3 -->
+        <div class="image-card">
+            <img src="3.png" alt="图片3">
+            <div class="image-info">
+                <h3 class="image-title">悬浮态上皮细胞粘附的力学-化学耦合模型及数值模拟</h3>
+                <p class="image-desc">上皮细胞黏附时，皮层张力会通过肌球蛋白反馈调节E-钙黏蛋白成键强度，排斥力随细胞重叠度呈非线性增强。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
